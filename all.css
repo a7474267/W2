@@ -46,15 +46,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 *{
   box-sizing: border-box;
+}
+body{
   font-family:Roboto,sans-serif;
-  font-weight: bold;
+  font-style: italic;
 }
 .wrap{
   margin:0 auto;
-  width: 1920px;
+  width: 1440px;
 }
 .flex{
   display: flex;
@@ -64,22 +65,25 @@ table {
 img{
   display: block;
 }
-.header{
+header{
   background-image: url("https://upload.cc/i1/2020/04/19/CQyGpK.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   height: 960px;
   padding-top: 356px;
   color:#FFFFFF;
 }
-.header .start{
+header .start{
   width: 308px;
   text-align:left;
 }
-.header h1{
+header h1{
   font-size: 80px;
   line-height: 94px;
   margin-bottom: 32px;
 }
-.header p{
+header p{
   font-size: 24px;
   line-height: 42px;
 }
@@ -89,10 +93,12 @@ img{
   display: flex;
   justify-content: space-between;
 }
-.title{
+.pt64{
+  padding-top: 64px;
+}
+h2{
   font-size: 64px;
   line-height: 75px;
-  padding-top: 64px;
 }
 .content{
   position:relative;
@@ -103,13 +109,17 @@ img{
   font-size: 24px;
   padding-top: 24px;
 }
+.content li{
+  margin-bottom: 8px;
+  text-align: center;
+}
 .content:before{
   content:'';
   width: 384px;
   height: 1px;
   background: black;
   position:absolute;
-  top:192px;
+  top:220px;
 }
 .exp{
   display: flex;
@@ -155,11 +165,11 @@ img{
   width: 1200px;
   margin-top: 40px;
   display: flex;
-  justify-content:space-around;
+  justify-content:space-between;
   margin-bottom: 160px;
 }
 .works{
-  height: 1855px;
+  height: 1919px;
   background-image: url('https://upload.cc/i1/2020/04/20/i4nKva.png');
   background-repeat: no-repeat;
   background-position:center bottom;
@@ -169,6 +179,10 @@ img{
   width: 1300px;
   display: flex;
   justify-content:space-around;
+  margin-top: 48px;
+}
+.workList:last-child{
+  padding-bottom: 162px;
 }
 .workList li img{
   margin-bottom: 16px;
@@ -184,13 +198,15 @@ img{
   font-size: 20px;
   line-height: 42px;
 }
-.contact{
+footer{
   height: 317px;
   background: black;
   color:#FFFFFF;
 }
-.contact p{
+footer a{
+  text-decoration: none;
   margin-top: 16px;
   font-size: 24px;
   line-height: 36px;
+  color:white;
 }
